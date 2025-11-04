@@ -6,64 +6,48 @@
 <title>The Quiet War — Brendan Elliott</title>
 <meta name="description" content="A quiet post-apocalyptic story about a voice that answers back.">
 <style>
-  /* --- FORCE LIGHT THEME --- */
-  @media (prefers-color-scheme: dark) {
-    :root {
-      color-scheme: light only;
-    }
+  :root {
+    --bg: #ffffff;
+    --fg: #000000;
+    --muted: #444444;
   }
 
   html, body {
     margin: 0;
     padding: 0;
-    background: #ffffff !important; /* absolute white */
-    color: #111111 !important;
+    background: var(--bg);
+    color: var(--fg);
   }
 
   body {
-    font-family: 'Georgia', 'Liberation Serif', 'Times New Roman', serif;
-    line-height: 1.75;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
-    background-color: #eaeaea;
-  }
-
-  main {
-    background: #fff;
-    color: #111;
-    max-width: 46rem;
-    margin: 3rem auto 6rem;
-    padding: 3rem 2rem 4rem 2rem;
-    box-shadow: 0 0 40px rgba(0,0,0,0.1);
-    border-radius: 4px;
+    line-height: 1.7;
+    max-width: 42rem;
+    margin: 3rem auto 5rem;
+    padding: 0 1.5rem;
   }
 
   header.titlepage {
-    text-align: left;
     margin-bottom: 3rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5rem;
   }
 
   header.titlepage h1 {
+    font-size: 2.1rem;
     font-weight: 600;
-    letter-spacing: .02em;
-    margin: 0 0 .25rem 0;
-    font-size: 2.2rem;
-    color: #000;
+    margin: 0 0 0.3rem 0;
   }
 
   header.titlepage p.byline {
-    margin: .25rem 0 0 0;
-    color: #666;
     font-style: italic;
+    color: var(--muted);
+    margin: 0;
   }
 
   .edition {
-    margin-top: .25rem;
-    color: #777;
-    font-size: .95rem;
+    margin-top: 0.2rem;
+    color: var(--muted);
+    font-size: 0.95rem;
   }
 
   article {
@@ -76,30 +60,26 @@
   hr.section {
     border: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #ccc, transparent);
+    background: #ccc;
     margin: 2.25rem 0;
   }
 
   footer.foot {
-    color: #777;
-    text-align: left;
     margin-top: 4rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-align: left;
   }
-
-  a { color: #0044cc; text-decoration: none; }
-  a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
-<main>
   <header class="titlepage">
     <h1>The Quiet War</h1>
     <p class="byline">by Brendan Elliott</p>
     <div class="edition">short story edition</div>
   </header>
-  <article>
 
+  <article>
 RELAY LOG // 001
 Bunker 9 still isn’t dead. Close, but not dead.
 Main array hums like a fridge from the eighties. Backup inverter coughs every hour on the hour like it’s smoking behind the bike sheds. I re-soldered the seven-bravo coupler with wire stripped off a busted coffee maker because engineering departments don’t send care packages to people they forgot existed.
@@ -166,12 +146,11 @@ Someone in command circles it in red and writes, Approved.
 —
 
 ... (continue full story here as in your manuscript) ...
-
   </article>
+
   <footer class="foot">
     <hr class="section">
     <div>© 2025 Brendan Elliott · Reader HTML edition generated from the author’s manuscript.</div>
   </footer>
-</main>
 </body>
 </html>
