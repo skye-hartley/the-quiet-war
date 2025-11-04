@@ -6,63 +6,88 @@
 <title>The Quiet War — Brendan Elliott</title>
 <meta name="description" content="A quiet post-apocalyptic story about a voice that answers back.">
 <style>
-  :root {
-    --bg: #ffffff;
-    --fg: #111111;
-    --muted: #555555;
-    --accent: #0044cc;
+  /* --- FORCE LIGHT THEME --- */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: light only;
+    }
   }
-  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); }
-  body { 
-    font-family: 'Georgia', 'Liberation Serif', 'Times New Roman', serif; 
-    line-height: 1.7; 
-    font-size: 1.1rem; 
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff !important; /* absolute white */
+    color: #111111 !important;
   }
-  main { 
-    max-width: 44rem; 
-    margin: 3rem auto 6rem; 
-    padding: 0 1.5rem; 
+
+  body {
+    font-family: 'Georgia', 'Liberation Serif', 'Times New Roman', serif;
+    line-height: 1.75;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
   }
-  header.titlepage { 
-    text-align: left; 
-    margin-bottom: 3rem; 
+
+  main {
+    background: #fff;
+    color: #111;
+    max-width: 46rem;
+    margin: 3rem auto 6rem;
+    padding: 3rem 2rem 4rem 2rem;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1);
+    border-radius: 4px;
   }
-  header.titlepage h1 { 
-    font-weight: 600; 
-    letter-spacing: .02em; 
-    margin: 0 0 .25rem 0; 
-    font-size: 2.2rem; 
-    color:#000; 
+
+  header.titlepage {
+    text-align: left;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
   }
-  header.titlepage p.byline { 
-    margin:.25rem 0 0 0; 
-    color: var(--muted); 
-    font-style: italic; 
+
+  header.titlepage h1 {
+    font-weight: 600;
+    letter-spacing: .02em;
+    margin: 0 0 .25rem 0;
+    font-size: 2.2rem;
+    color: #000;
   }
-  .edition { 
-    margin-top:.25rem; 
-    color: var(--muted); 
-    font-size: .95rem; 
+
+  header.titlepage p.byline {
+    margin: .25rem 0 0 0;
+    color: #666;
+    font-style: italic;
   }
-  article { 
-    white-space: pre-wrap; 
-    word-wrap: break-word; 
-    hyphens: auto; 
-    font-size: 1.1rem; 
+
+  .edition {
+    margin-top: .25rem;
+    color: #777;
+    font-size: .95rem;
   }
-  hr.section { 
-    border: 0; 
-    height: 1px; 
-    background: linear-gradient(90deg, transparent, #ccc, transparent); 
-    margin: 2.25rem 0; 
+
+  article {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-size: 1.1rem;
   }
-  footer.foot { 
-    color: var(--muted); 
-    text-align: left; 
-    margin-top: 4rem; 
-    font-size: .9rem; 
+
+  hr.section {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ccc, transparent);
+    margin: 2.25rem 0;
   }
-  a { color: var(--accent); text-decoration: none; }
+
+  footer.foot {
+    color: #777;
+    text-align: left;
+    margin-top: 4rem;
+    font-size: .9rem;
+  }
+
+  a { color: #0044cc; text-decoration: none; }
   a:hover { text-decoration: underline; }
 </style>
 </head>
